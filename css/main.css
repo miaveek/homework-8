@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'Impact';
+  src:url('/Impact.woff') format('woff'),;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+*{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  *outline: 1px solid #d60c1a;
+}
+body{font-family: "Impact";min-width:1080px;}
+/*header styles*/
+header{
+  display: grid;
+  color:#fff;
+  grid-template-columns: repeat(12,8.3333%);
+  grid-template-rows:  repeat(12,70px);
+  grid-row-gap:10px;
+  background-color: #35e3e9;
+}
+header a{text-decoration: none;color:#fff}
+header nav{font-size: 0;}
+header nav ul{float: right;}
+header nav ul li{
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 17px;
+  padding:0 17px;
+  text-transform: uppercase;
+  font-weight: bold;}
+header nav ul li:nth-child(2) a,a:hover,a:active{color:#d60c1a;}
+.logo span,img{
+  display: inline-block;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.search-form{min-width: 225px;}
+.search-btn{
+  background-color: transparent;
+  background-image: url(../img/btn-ico.png);
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 17px;
+  margin-right: 15px;
+}
+.search-form input{ display: none;}
+.search-form .quote{
+ background: transparent;
+ color:#fff;
+ text-transform: uppercase;
+ padding:7% 8%;
+ border: 1px solid #fff;
+}
+.quote span{color: turquoise; }
+.banner{
+  background-image: url(../img/banner_img.jpg);
+  background-position:left;
+  background-repeat: no-repeat;
+  background-size:cover;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start:1;
+  grid-row-end: 13;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(8,150px);
+  grid-row-gap:10px;
+  border-bottom: 13px solid #000;
+}
+.banner h3{
+  color: #d596ba;
+  text-transform: capitalize;
+  font-size: 15px;
+  padding:1vmax;
+  text-align: left;
+}
+.banner h1{
+  font-size: 51px;
+  padding-bottom: 16px;
+  line-height: 1.2;
+}
+.banner h4{
+  color:#97155b;
+  padding: 40px 0;
+  font-size: 16px;
+}
+.banner-box_2{
+  grid-column-start: 5;
+  grid-column-end: 10;
+  grid-row-start:2;
+  grid-row-end: 3;
+}
+.h-grid-box_1{
+  margin-left: 50px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start:2;
+  grid-row-end: 3;
+  z-index: 2;
+}
+.h-grid-box_2{
+  grid-column-start: 4;
+  grid-column-end: 11;
+  grid-row-start:2;
+  grid-row-end: 3;
+  z-index: 2;}
+.h-grid-box_3{
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start:1;
+  grid-row-end: 13;}
+.h-grid-box_4{
+  grid-column-start: 11;
+  grid-column-end: 13;
+  grid-row-start:2;
+  grid-row-end: 3;
+  z-index: 2;}
+.banner-btn{
+  width: 275px;
+  font-size: 19px;
+  background: #d60c1a;
+  color:#fff;
+  text-transform: uppercase;
+  padding:20px 32px;}
+.banner-btn span{ color:#fff;}
+/*main section syles*/
+.articles{
+  display: grid;
+  background-color: #a99494;
+  padding:0 55px;}
+.articles ul{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  grid-template-rows:  repeat(3,213px);
+  grid-column-gap:3%;
+  margin-top: -25px;}
+.articles ul li{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ background-color: #fff;
+ min-height: 560px;
+ padding-left: 45px;
+ padding-right: 16px;
+ box-shadow: 5px 3px 15px 0px rgba(0,0,0,0.63);
+-webkit-box-shadow: 5px 3px 15px 0px rgba(0,0,0,0.63);
+-moz-box-shadow: 5px 3px 15px 0px rgba(0,0,0,0.63);
+}
+.articles ul li p{
+  padding-top:15px ;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.box-decor{
+  width: 97%;
+  min-height: 545px;
+  padding: 10px;
+  display: inline-block;
+  box-shadow: 11px 9px 7px -8px rgba(187,187,187,0.57);
+-webkit-box-shadow: 11px 9px 7px -8px rgba(187,187,187,0.57);
+-moz-box-shadow: 11px 9px 7px -8px rgba(187,187,187,0.57);
+}
+.articles ul li img{
+  width: 100%;
+  height: auto;
+  max-height: 275px;
+  display: inline-block;
+  margin-top: -60px;
+}
+.articles h4{
+  text-transform: capitalize;
+  font-size: 27px;
+  line-height: 3;
+}
+.articles h4::after{
+  content:" ";
+  display: block;
+  font-family: Arial, sans-serif;
+  width: 6vmax;
+  height: 1px;
+  border-bottom: 10px solid #d60c1a;
+}
+/*footer section styles*/
+.services-articles,footer{ min-height: 520px;}
+footer{  background-color: #000;}
+ .services-articles{background-color: #fff;}
+ .services-wiew{
+   display: block;
+   cursor: pointer;
+   text-align: right;
+   padding: 100px;
+   font-size: 24px;
+   font-family: Arial, Helvetica, 'Arial Narrow Bold', sans-serif;
+ }
+ .clearfix::after { content: '';clear: both; display: block;}
+
